@@ -1,0 +1,25 @@
+{
+  "name": "space",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.css",
+    "devserver": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sehja/space.git"
+  },
+  "author": "Gaya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sehja/space/issues"
+  },
+  "homepage": "https://github.com/Sehja/space#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.1"
+  }
+}

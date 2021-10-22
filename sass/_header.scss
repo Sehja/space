@@ -1,0 +1,111 @@
+.header {
+    background-image: url(../images/bg-header.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+        padding: 79px 0 142px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 303px;
+    }
+
+    &__nav {
+        display: inline-block;
+    }
+
+    &__list {
+        display: flex;
+        align-items: flex-end;
+        line-height: 22px;
+
+        &-item:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__link {
+        font-size: 18px;
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+
+    &__phone {
+        display: inline-block;
+        margin-left: auto;
+        font-size: 24px;
+    }
+
+    &__login {
+        border: none;
+        background-color: transparent;
+        display: inline-block;
+        margin-left: 22px;
+        margin-right: auto;
+    }
+
+    &__content {
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-family: 'spaceagecyrillic';
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    &__tur {
+        font-size: 110px;
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 49px;
+    }
+
+    &__btn {
+        background-color: transparent;
+        color: inherit;
+        font-size: 24px;
+        padding: 15px 0;
+        border: 1px solid #FFFFFF;
+        outline: none;
+        cursor: pointer;
+        transition: .2s;
+        text-transform: uppercase;
+        margin-bottom: 112px;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, .3);
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__descr {
+        width: 165px;
+        font-size: 14px;
+        line-height: 20px;
+
+        &:not(:last-child) {
+            margin-right: 52px;
+        }
+    }
+}
