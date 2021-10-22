@@ -3,7 +3,7 @@
     background-image: url(../images/bg-how.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
+    background-position: center;
     margin-top: -1px;
 
     &__title {
@@ -16,7 +16,8 @@
     }
 
     &__wrapper circle,
-    text {
+    text,
+    g p {
         transition: .4s;
         cursor: pointer;
     }
@@ -29,5 +30,10 @@
     &__wrapper g:hover text {
         fill: $color-primary;
         font-size: 36px;
+    }
+
+    &__wrapper g:hover p {
+        color: $color-primary;
+        font-size: 26px;
     }
 }

@@ -7,19 +7,19 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url("/fonts/Roboto-Regular.woff2") format("woff2"), url("/fonts/Roboto-Regular.woff") format("woff");
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: 'sf-pro-display';
-  src: url("/fonts/SFProDisplay-Regular.woff2") format("woff2"), url("/fonts/SFProDisplay-Regular.woff") format("woff");
+  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: 'sf-pro-display';
-  src: url("/fonts/SFProDisplay-Bold.woff2") format("woff2"), url("/fonts/SFProDisplay-Bold.woff") format("woff");
+  src: url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff");
   font-style: normal;
   font-weight: bold; }
 
@@ -215,7 +215,7 @@ a {
   background-image: url(../images/bg-how.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   margin-top: -1px; }
   .how__title {
     margin-bottom: 100px; }
@@ -223,7 +223,8 @@ a {
     margin: 0 auto;
     max-width: 1000px; }
   .how__wrapper circle,
-  .how text {
+  .how text,
+  .how g p {
     transition: .4s;
     cursor: pointer; }
   .how__wrapper g:hover circle {
@@ -232,3 +233,6 @@ a {
   .how__wrapper g:hover text {
     fill: #036CCA;
     font-size: 36px; }
+  .how__wrapper g:hover p {
+    color: #036CCA;
+    font-size: 26px; }
