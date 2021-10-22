@@ -2,17 +2,11 @@
     padding: 100px 0;
     background-image: url(../images/bg-how.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    margin-top: -1px;
+    background-size: cover;
 
     &__title {
         margin-bottom: 100px;
-    }
-
-    &__wrapper {
-        margin: 0 auto;
-        max-width: 1000px;
     }
 
     &__wrapper circle,
@@ -24,6 +18,16 @@
 
     }
 
+    &__wrapper p-545 {
+        width: 240px;
+
+    }
+
+    &__wrapper p-236 {
+        width: 93px;
+        text-align: right;
+    }
+
     &__wrapper g:hover circle {
         r: 20px;
         fill: $color-primary;
@@ -31,11 +35,16 @@
 
     &__wrapper g:hover text {
         fill: $color-primary;
-        font-size: 36px;
+        font-size: 26px;
     }
 
     &__wrapper g:hover p {
         color: $color-primary;
         font-size: 26px;
     }
+
+    // &__wrapper foreignObject:hover p-236 {
+    //     color: $color-primary;
+    //     font-size: 26px;
+    // }
 }

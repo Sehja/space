@@ -214,26 +214,27 @@ a {
   padding: 100px 0;
   background-image: url(../images/bg-how.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
-  margin-top: -1px; }
+  background-size: cover; }
   .how__title {
     margin-bottom: 100px; }
-  .how__wrapper {
-    margin: 0 auto;
-    max-width: 1000px; }
   .how__wrapper circle,
   .how text,
   .how g p {
     transition: .4s;
     cursor: pointer;
     font-family: 'sf-pro-display'; }
+  .how__wrapper p-545 {
+    width: 240px; }
+  .how__wrapper p-236 {
+    width: 93px;
+    text-align: right; }
   .how__wrapper g:hover circle {
     r: 20px;
     fill: #036CCA; }
   .how__wrapper g:hover text {
     fill: #036CCA;
-    font-size: 36px; }
+    font-size: 26px; }
   .how__wrapper g:hover p {
     color: #036CCA;
     font-size: 26px; }
