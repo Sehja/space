@@ -1,8 +1,9 @@
 .how {
     padding: 100px 0;
-    background-image: url(../images/bg-how.jpg);
+    background-image:
+        linear-gradient(3deg, #010203 0%, rgba(1, 2, 3, 0) 100%),
+        url(../images/bg-how.jpg);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
 
     &__title {
