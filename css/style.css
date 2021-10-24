@@ -368,7 +368,7 @@ a {
       .services__btn:first-child::before {
         content: "";
         display: inline-block;
-        background-image: url(/images/space-man.png);
+        background-image: url(../images/space-man.png);
         position: absolute;
         width: 192px;
         height: 150px;
@@ -404,12 +404,12 @@ a {
 
 .contacts {
   padding: 100px 0;
-  background-image: url(/images/contacts-bg.jpg); }
+  background-image: url(../images/contacts-bg.jpg); }
   .contacts__wrapper {
     display: flex;
     justify-content: space-between; }
   .contacts__item:last-child {
-    background-image: url(/images/ilon.png);
+    background-image: url(../images/ilon.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: right bottom; }

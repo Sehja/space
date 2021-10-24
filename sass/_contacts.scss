@@ -1,6 +1,6 @@
 .contacts {
     padding: 100px 0;
-    background-image: url(/images/contacts-bg.jpg);
+    background-image: url(../images/contacts-bg.jpg);
 
     &__wrapper {
         display: flex;
@@ -8,7 +8,7 @@
     }
 
     &__item:last-child {
-        background-image: url(/images/ilon.png);
+        background-image: url(../images/ilon.png);
         background-repeat: no-repeat;
         background-size: auto;
         background-position: right bottom;
