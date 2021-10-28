@@ -57,7 +57,9 @@ a {
     color: inherit;
 }
 
-
+main {
+    overflow: hidden;
+}
 
 
 .container {
@@ -69,4 +71,23 @@ a {
 .title {
     font-family: 'spaceagecyrillic';
     font-size: 48px;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 520px) {
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 25px;
+    }
+
+    br {
+        @media screen and (max-width: 1200px) {
+            display: none;
+        }
+    }
 }

@@ -220,13 +220,15 @@
         top: 0;
         left: 0;
         justify-content: space-evenly;
-        font-size: 30px;
+        font-size: 44px;
+        font-family: 'spaceagecyrillic';
         padding: 50px 0 50px;
-        background-image: radial-gradient(#00080f, #5a5673);
+        background-image: radial-gradient(#00080f, #242b4c);
         z-index: 100;
         transition: .3s;
 
         &-item {
+            letter-spacing: 7px;
             text-shadow: 0 0 7px #fff,
                 0 0 21px #fff,
                 0 0 42px #c6f0e2

@@ -5,6 +5,12 @@
     background-size: cover;
     padding: 100px 0 150px;
 
+    @media screen and (max-width: 1400px) {
+        background-image: linear-gradient(180deg, #010203 8.85%, rgba(1, 2, 3, 0) 86.98%),
+            linear-gradient(336deg, #010203 8.85%, rgba(1, 2, 3, 0) 86.98%),
+            url(../images/bg-about.jpg);
+    }
+
     &__title {
         margin-bottom: 100px;
     }
@@ -16,12 +22,22 @@
         &:not(:last-child) {
             margin-bottom: 150px;
         }
+
+        @media screen and (max-width: 1270px) {
+            justify-content: center;
+        }
     }
 
     &__descr {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @media screen and (max-width: 1270px) {
+            text-align: left;
+            align-items: center;
+        }
+
     }
 
     &__center {
@@ -30,19 +46,40 @@
         button {
             margin-bottom: auto;
         }
+
+        table {
+            margin-bottom: 20px;
+        }
     }
 
     &__img {
-        margin-right: 99px;
+        margin-right: 96px;
+
 
         img {
             height: 100%;
+
+            @media screen and (max-width: 700px) {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 1270px) {
+            text-align: center;
+            width: 100%;
+            margin: 0;
+            margin-bottom: 60px;
         }
     }
 
     &__center-img {
         margin-right: 0;
-        margin-left: 99px;
+        margin-left: 96px;
+
+        @media screen and (max-width: 1270px) {
+            margin: 0;
+            margin-bottom: 60px;
+        }
     }
 
     &__center {
@@ -74,6 +111,22 @@
             &:not(:last-child) {
                 margin-right: 53px;
             }
+
+            @media screen and (max-width: 700px) {
+                margin: 0;
+                margin-bottom: 20px;
+                width: 100%;
+                text-align: center;
+
+                &:not(:last-child) {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            flex-wrap: wrap;
+            line-height: 25px;
         }
     }
 
@@ -85,20 +138,28 @@
         margin-bottom: 20px;
         display: block;
         border-collapse: collapse;
-    }
 
-    &__table-tr {
-        border: 1px solid #fff;
-        border-left: none;
-        border-right: none;
-    }
+        &-tr {
+            border: 1px solid #fff;
+            border-left: none;
+            border-right: none;
+        }
 
-    &__table-td {
-        text-align: center;
-        padding: 10px 30px 13px 0;
+        &-td {
+            text-align: center;
+            padding: 10px 30px 13px 0;
 
-        &:not(:last-child) {
-            margin-right: 30px;
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+
+        @media screen and (max-width: 1270px) {
+            margin-bottom: 60px;
+        }
+
+        @media screen and (max-width: 630px) {
+            display: none;
         }
     }
 
@@ -115,6 +176,11 @@
 
     &__price {
         margin-bottom: 43px;
+        text-align: center;
+
+        @media screen and (max-width: 700px) {
+            font-size: 12px;
+        }
     }
 
     &__btn {
@@ -128,6 +194,15 @@
         transition: .2s;
         display: inline-block;
         max-width: 300px;
+
+        @media screen and (max-width: 1270px) {
+            padding: 20px 27px;
+        }
+
+        @media screen and (max-width: 700px) {
+            font-size: 14px;
+            padding: 15px 20px;
+        }
 
         &:hover {
             background-color: rgba(266, 266, 266, .1);
