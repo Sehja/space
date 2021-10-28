@@ -65,7 +65,7 @@
         font-size: 24px;
 
         @media screen and (max-width: 400px) {
-            font-size: 19px;
+            font-size: 16px;
         }
     }
 
@@ -141,6 +141,10 @@
                 margin-bottom: 20px;
             }
         }
+
+        @media screen and (max-width: 400px) {
+            font-size: 15px;
+        }
     }
 
     &__btn {
@@ -171,9 +175,9 @@
             font-size: 15px;
         }
 
-        @media screen and (max-width: 400px) {
-            width: 100%;
-            font-size: 14px;
+        @media screen and (max-width: 420px) {
+            font-size: 12px;
+            padding: 15px 10px;
         }
     }
 
@@ -218,12 +222,14 @@
         justify-content: space-evenly;
         font-size: 30px;
         padding: 50px 0 50px;
-        background-image: radial-gradient(#4877a1, #142534);
+        background-image: radial-gradient(#00080f, #5a5673);
         z-index: 100;
         transition: .3s;
 
         &-item {
-            text-shadow: 7px 3px 37px #000;
+            text-shadow: 0 0 7px #fff,
+                0 0 21px #fff,
+                0 0 42px #c6f0e2
         }
 
         @media screen and (max-width: 500px) {
@@ -250,6 +256,8 @@
         display: inline-block;
         top: 50%;
         transform: translate(-50%, 50%);
+        animation: flicker 1.5s infinite;
+        transition: .3s;
 
         &::before,
         &::after {
@@ -261,6 +269,13 @@
             left: 0;
             display: inline-block;
             transition: .5s;
+            animation: flicker 1.5s infinite alternate;
+            // box-shadow: 0 0 7px #fff,
+            //     0 0 10px #fff,
+            //     0 0 21px #fff,
+            //     0 0 42px #c6f0e2,
+            //     0 0 82px #c6f0e2,
+            //     0 0 92px #c6f0e2;
         }
 
         &::before {
@@ -281,19 +296,55 @@
 
     &__checkbox:checked+&__label &__fake {
         background-color: transparent;
+        animation: none;
     }
 
     &__checkbox:checked+&__label &__fake::after {
         transform: rotate(-220deg);
         top: 0;
+        animation: none;
+        box-shadow: 0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #c6f0e2,
+            0 0 82px #c6f0e2,
+            0 0 92px #c6f0e2;
     }
 
     &__checkbox:checked+&__label &__fake::before {
         transform: rotate(220deg);
         top: 0;
+        animation: none;
+        box-shadow: 0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #c6f0e2,
+            0 0 82px #c6f0e2,
+            0 0 92px #c6f0e2;
     }
 
     &__checkbox:checked~&__list {
         transform: translateX(0);
+    }
+}
+
+@keyframes flicker {
+
+    0%,
+    18%,
+    22%,
+    25% {
+        box-shadow: 0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #c6f0e2,
+            0 0 82px #c6f0e2,
+            0 0 92px #c6f0e2;
+    }
+
+    20%,
+    24%,
+    55% {
+        box-shadow: none;
     }
 }
