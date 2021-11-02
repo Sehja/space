@@ -541,6 +541,13 @@ main {
     display: flex;
     justify-content: space-between;
     margin-bottom: 142px; }
+    @media screen and (max-width: 1140px) {
+      .offer__inner-top {
+        flex-direction: column;
+        align-items: center; } }
+  @media screen and (max-width: 1140px) {
+    .offer__block:not(:last-child) {
+      margin-bottom: 60px; } }
   .offer__content {
     display: flex;
     flex-direction: column;
@@ -551,11 +558,29 @@ main {
     border: 1px solid #fff;
     padding: 43px 80px 38px;
     margin-bottom: 25px; }
+    @media screen and (max-width: 600px) {
+      .offer__content {
+        padding: 43px 50px 38px;
+        width: 400px; } }
+    @media screen and (max-width: 430px) {
+      .offer__content {
+        width: 350px;
+        min-height: 365px;
+        padding: 20px 20px 20px; } }
+    @media screen and (max-width: 370px) {
+      .offer__content {
+        width: 300px; } }
   .offer__heading {
     font-size: 24px;
     font-weight: 400;
     text-align: center;
     margin-bottom: 111px; }
+    @media screen and (max-width: 600px) {
+      .offer__heading {
+        font-size: 21px; } }
+    @media screen and (max-width: 400px) {
+      .offer__heading {
+        font-size: 19px; } }
   .offer--red {
     color: #CB0E0E; }
   .offer__old-price {
@@ -574,6 +599,15 @@ main {
       left: 0; }
   .offer__price {
     font-size: 48px; }
+    @media screen and (max-width: 600px) {
+      .offer__price {
+        font-size: 38px; } }
+    @media screen and (max-width: 400px) {
+      .offer__price {
+        font-size: 33px; } }
+    @media screen and (max-width: 400px) {
+      .offer__price {
+        font-size: 30px; } }
   .offer__btn {
     font-size: 18px;
     padding: 20px 0 20px;
@@ -591,11 +625,23 @@ main {
   .services__title {
     margin-bottom: 97px;
     line-height: 48px; }
+    @media screen and (max-width: 1200px) {
+      .services__title {
+        margin-bottom: 250px; } }
   .services__wrapper {
     display: flex;
     justify-content: space-between; }
+    @media screen and (max-width: 1200px) {
+      .services__wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0 auto; } }
   .services__content {
     padding-right: 83px; }
+    @media screen and (max-width: 1200px) {
+      .services__content {
+        padding-right: 0;
+        padding-left: 55px; } }
   .services__descr {
     font-size: 24px;
     line-height: 29px;
@@ -605,6 +651,9 @@ main {
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 25px; }
+    @media screen and (max-width: 1100px) {
+      .services__list {
+        font-size: 19px; } }
     .services__list-item {
       position: relative;
       left: 32px; }
@@ -625,6 +674,10 @@ main {
     min-width: 500px;
     display: flex;
     flex-direction: column; }
+    @media screen and (max-width: 1200px) {
+      .services__btn-box {
+        min-width: 440px;
+        margin-bottom: 90px; } }
   .services__btn {
     background-color: transparent;
     color: #fff;
