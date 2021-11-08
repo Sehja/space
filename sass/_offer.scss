@@ -255,6 +255,10 @@
         padding: 99px 200px 101px;
         border: 1px solid #fff;
         margin-bottom: 50px;
+
+        @media screen and (max-width: 900px) {
+            padding: 30px 40px 30px;
+        }
     }
 
     &__item {

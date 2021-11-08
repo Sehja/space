@@ -8,11 +8,12 @@ $(function () {
             nextArrow: '<img src="images/arrow-right.png" alt="arrow-next" class="slider__arrow-next">',
             responsive: [
                 {
-                    breakpoint: 1240,
+                    breakpoint: 900,
                     settings: {
                         arrows: false,
+                        centerPadding: "0",
                         centerMode: true,
-                        centerPadding: '5px',
+                        slidesToScroll: 1,
                         slidesToShow: 1
                     }
                 }

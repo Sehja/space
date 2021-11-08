@@ -499,7 +499,7 @@ main {
   @media screen and (max-width: 1300px) {
     .hurry {
       background-size: auto;
-      padding: 80px 0 420px; } }
+      padding: 80px 0 390px; } }
   .hurry__inner {
     display: flex; }
     @media screen and (max-width: 1300px) {
@@ -708,6 +708,9 @@ main {
   padding: 99px 200px 101px;
   border: 1px solid #fff;
   margin-bottom: 50px; }
+  @media screen and (max-width: 900px) {
+    .slider__wrapper {
+      padding: 30px 40px 30px; } }
 
 .slider__item {
   margin: 0 auto; }
