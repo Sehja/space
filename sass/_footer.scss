@@ -5,13 +5,56 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media screen and (max-width: 1150px) {
+        padding-bottom: 80px;
+    }
+
     &__wrapper {
         display: flex;
         justify-content: flex-end;
+
+        @media screen and (max-width: 1400px) {
+            justify-content: space-evenly;
+        }
+
+        @media screen and (max-width: 600px) {
+            flex-wrap: wrap;
+        }
+
+        @media screen and (max-width: 500px) {
+            justify-content: space-around;
+        }
     }
 
     &__item:not(:last-child) {
         margin-right: 100px;
+
+        @media screen and (max-width: 700px) {
+            margin-right: 20px;
+        }
+
+        @media screen and (max-width: 500px) {
+            margin-right: 0;
+        }
+    }
+
+    &__item-1 {
+        @media screen and (max-width: 600px) {
+            order: 3;
+            width: 100%;
+        }
+    }
+
+    &__item-2 {
+        @media screen and (max-width: 600px) {
+            order: 1;
+        }
+    }
+
+    &__item-3 {
+        @media screen and (max-width: 600px) {
+            order: 2;
+        }
     }
 
     &__descr {
@@ -22,6 +65,17 @@
 
         &:not(:last-child) {
             margin-bottom: 48px;
+
+            @media screen and (max-width: 600px) {
+                margin-bottom: 0;
+                margin-top: 50px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            font-size: 12px;
+            max-width: 100%;
+            text-align: center;
         }
     }
 
@@ -30,6 +84,10 @@
         flex-direction: column;
         justify-content: space-between;
         min-height: 100%;
+
+        @media screen and (max-width: 600px) {
+            margin-bottom: 80px;
+        }
     }
 
     &__link {
@@ -40,6 +98,10 @@
 
         &:hover {
             color: $color-secondary;
+        }
+
+        @media screen and (max-width: 400px) {
+            font-size: 13px;
         }
     }
 }

@@ -5,6 +5,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media screen and (max-width: 1150px) {
+        padding: 100px 0 150px;
+    }
+
     &__title {
         margin-bottom: 100px;
     }
@@ -128,10 +132,20 @@
             background-color: rgba(255, 255, 255, 0.1);
         }
     }
+
+    br {
+        @media screen and (max-width: 700px) {
+            display: none;
+        }
+    }
 }
 
 .services {
     margin-bottom: 200px;
+
+    @media screen and (max-width: 650px) {
+        margin-bottom: 100px;
+    }
 
     &__title {
         margin-bottom: 97px;
@@ -160,12 +174,20 @@
             padding-right: 0;
             padding-left: 55px;
         }
+
+        @media screen and (max-width: 600px) {
+            padding-left: 40px;
+        }
     }
 
     &__descr {
         font-size: 24px;
         line-height: 29px;
         margin-bottom: 25px;
+
+        @media screen and (max-width: 500px) {
+            font-size: 22px;
+        }
     }
 
     &__list {
@@ -176,6 +198,14 @@
 
         @media screen and (max-width: 1100px) {
             font-size: 19px;
+        }
+
+        @media screen and (max-width: 550px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 200px;
+            font-size: 17px;
         }
 
         &-item {
@@ -193,6 +223,16 @@
                 border-radius: 50%;
                 left: -32px;
                 top: 4px;
+
+                @media screen and (max-width: 500px) {
+                    top: 11px;
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+
+            @media screen and (max-width: 500px) {
+                left: 0;
             }
         }
     }
@@ -200,6 +240,10 @@
     &__price {
         font-size: 12px;
         line-height: 14px;
+
+        @media screen and (max-width: 500px) {
+            font-size: 10px;
+        }
     }
 
     &__btn-box {
@@ -210,6 +254,10 @@
         @media screen and (max-width: 1200px) {
             min-width: 440px;
             margin-bottom: 90px;
+        }
+
+        @media screen and (max-width: 500px) {
+            min-width: 100%;
         }
     }
 
@@ -246,6 +294,10 @@
                 right: 0;
             }
         }
+
+        @media screen and (max-width: 500px) {
+            font-size: 15px;
+        }
     }
 }
 
@@ -270,6 +322,14 @@
         line-height: 30px;
         font-family: 'spaceagecyrillic';
         text-align: center;
+
+        @media screen and (max-width: 600px) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 400px) {
+            font-size: 14px;
+        }
     }
 
     &__arrow-prev,
